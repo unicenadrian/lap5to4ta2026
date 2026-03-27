@@ -1,0 +1,17 @@
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #0f1923; color: #ffffff; }
+        header { background-color: #ff4655; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #1f2326; padding: 10px; text-align: center; }
+        nav a { color: #ff4655; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { color: #ffffff; }
+        section { margin: 20px; padding: 20px; background-color: #1f2326; border-radius: 8px; }
+        .agent { display: flex; margin-bottom: 20px; align-items: center; flex-wrap: wrap; }
+        
+        .agent img { width: 150px; height: 150px; margin-right: 20px; border-radius: 8px; }
+        .agent-details { flex: 1; }
+        .toggle-btn { background-color: #ff4655; color: white; border: none; padding: 5px 10px; cursor: pointer; border-radius: 4px; }
+        .hidden { display: none; }
+        .map { display: flex; margin-bottom: 20px; align-items: center; }
+        .map img { width: 200px; height: 120px; margin-right: 20px; border-radius: 8px; }
+        footer { text-align: center; padding: 10px; background-color: #333; color: white; }
+        @media (max-width: 768px) { .agent, .map { flex-direction: column; } .agent img, .map img { margin-bottom: 10px; } }
+    

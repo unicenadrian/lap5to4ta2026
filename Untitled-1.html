@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant: Guía Completa</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script>
+        function toggleDetails(id) {
+            const element = document.getElementById(id);
+            element.classList.toggle('hidden');
+        }
+    </script>   
+</head>
+<body>
+    <header>
+        <h1>Valorant: Guía Completa e Informativa</h1>
+        <p>Descubre agentes, mapas, estrategias y más sobre este shooter táctico de Riot Games.</p>
+    </header>
+
+    <nav>
+        <a href="#intro">Introducción</a>
+        <a href="#agentes">Agentes</a>
+        <a href="#mapas">Mapas</a>
+        <a href="#estrategias">Estrategias</a>
+        <a href="#consejos">Consejos</a>
+    </nav>
+
+    <section id="intro">
+        <h2>¿Qué es Valorant?</h2>
+        <p>Valorant es un juego de disparos táctico en primera persona (FPS) gratuito desarrollado por Riot Games, lanzado en junio de 2020. Combina mecánicas de juegos como Counter-Strike con habilidades únicas de agentes. Se juega en equipos de 5 contra 5 en mapas competitivos, donde el objetivo es plantar o desactivar una bomba llamada Spike. Cada agente tiene un rol específico (Duelista, Centinela, Iniciador, Controlador) y habilidades que promueven la estrategia y el trabajo en equipo. Es popular por su énfasis en la precisión, el posicionamiento y las jugadas tácticas.</p>
+        <p><strong>Historia:</strong> Inspirado en el universo de League of Legends, Valorant introduce a agentes con orígenes diversos, luchando contra amenazas globales como el grupo terrorista "Kingdom". El juego ha evolucionado con parches regulares, añadiendo nuevos agentes, mapas y modos de juego.</p>
+    </section>
+
+    <section id="agentes">
+        <h2>Agentes Más Usados</h2>
+        <p>Estos son los agentes con mayor pick rate en competitivo (aproximado, basado en VLR.gg y Tracker.gg). Incluyen fotos, roles, habilidades clave y estadísticas de uso. Haz clic en "Ver más" para detalles.</p>
+
+        <div class="agent">
+            <img src="https://static.wikia.nocookie.net/valorant/images/3/35/Jett_icon.png" alt="Jett">
+            <div class="agent-details">
+                <h3>Jett (Duelista) - Uso: ~14%</h3>
+                <p>Agente coreano con movilidad extrema. Ideal para flanqueos.</p>
+                <button class="toggle-btn" onclick="toggleDetails('jett-details')">Ver más</button>
+                <div id="jett-details" class="hidden">
+                    <p><strong>Habilidades:</strong> Dash (movimiento rápido), Updraft (salto alto), Tailwind (velocidad), Blade Storm (cuchillos letales).</p>
+                    <p><strong>Por qué es popular:</strong> Dominante en duelos y entradas agresivas.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="agent">
+            <img src="https://static.wikia.nocookie.net/valorant/images/7/74/Sage_icon.png" alt="Sage">
+            <div class="agent-details">
+                <h3>Sage (Centinela) - Uso: ~13%</h3>
+                <p>Agente chino enfocada en soporte y control.</p>
+                <button class="toggle-btn" onclick="toggleDetails('sage-details')">Ver más</button>
+                <div id="sage-details" class="hidden">
+                    <p><strong>Habilidades:</strong> Healing Orb (curar), Barrier Orb (paredes), Slow Orb (ralentizar), Resurrection (revivir).</p>
+                    <p><strong>Por qué es popular:</strong> Esencial para equipos, salva vidas y controla áreas.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="agent">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjhS_it11-ZHevo_ut4G3uPq_5Io4A_bGLuA&s" alt="Reyna">
+            <div class="agent-details">
+                <h3>Reyna (Duelista) - Uso: ~11%</h3>
+                <p>Agente mexicana con vampirismo y agresividad.</p>
+                <button class="toggle-btn" onclick="toggleDetails('reyna-details')">Ver más</button>
+                <div id="reyna-details" class="hidden">
+                    <p><strong>Habilidades:</strong> Leer (robar vida), Devour (curarse), Dismiss (teletransportarse), Empress (modo agresivo).</p>
+                    <p><strong>Por qué es popular:</strong> Excelente en 1v1 y carry en rondas económicas.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="agent">
+            <img src="https://static.wikia.nocookie.net/valorant/images/1/14/Phoenix_icon.png" alt="Phoenix">
+            <div class="agent-details">
+                <h3>Phoenix (Duelista) - Uso: ~10%</h3>
+                <p>Agente británico con habilidades de fuego.</p>
+                <button class="toggle-btn" onclick="toggleDetails('phoenix-details')">Ver más</button>
+                <div id="phoenix-details" class="hidden">
+                    <p><strong>Habilidades:</strong> Blaze (paredes de fuego), Curveball (granadas curvas), Hot Hands (quemar), Run It Back (revivir).</p>
+                    <p><strong>Por qué es popular:</strong> Bueno para iniciar rondas con flash y daño área.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="agent">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUtRaC_CitXzA-QPfz_bVv2VwrPzmfeXDUag&s" alt="Killjoy">
+            <div class="agent-details">
+                <h3>Killjoy (Centinela) - Uso: ~9%</h3>
+                <p>Agente alemán con gadgets tecnológicos.</p>
+                <button class="toggle-btn" onclick="toggleDetails('killjoy-details')">Ver más</button>
+                <div id="killjoy-details" class="hidden">
+                    <p><strong>Habilidades:</strong> Alarmbot (detección), Turret (disparos automáticos), Nanoswarm (granadas), Lockdown (atrapar).</p>
+                    <p><strong>Por qué es popular:</strong> Defiende sitios con trampas efectivas.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="agent">
+            <img src="https://fbi.cults3d.com/uploaders/14684840/illustration-file/388d5e1a-7c44-4172-a0c9-0a34c088be8c/sova-avatar.jpg" alt="Sova">
+            <div class="agent-details">
+                <h3>Sova (Iniciador) - Uso: ~8%</h3>
+                <p>Agente ruso con arcos y reconocimiento.</p>
+                <button class="toggle-btn" onclick="toggleDetails('sova-details')">Ver más</button>
+                <div id="sova-details" class="hidden">
+                    <p><strong>Habilidades:</strong> Shock Bolt (flechas), Recon Dart (detección), Owl Drone (reconocimiento), Hunter's Fury (flechas explosivas).</p>
+                    <p><strong>Por qué es popular:</strong> Excelente para información y daño a distancia.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="agent">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPH44IGjKVvuXZjdv0Oc2R9vMARlLgu435gg&s" alt="Viper">
+            <div class="agent-details">
+                <h3>Viper (Controlador) - Uso: ~7%</h3>
+                <p>Agente estadounidense con venenos y humo.</p>
+                <button class="toggle-btn" onclick="toggleDetails('viper-details')">Ver más</button>
+                <div id="viper-details" class="hidden">
+                    <p><strong>Habilidades:</strong> Poison Cloud (nube tóxica), Toxic Screen (paredes de humo), Snake Bite (daño área), Viper's Pit (zona controlada).</p>
+                    <p><strong>Por qué es popular:</strong> Controla espacios y crea oportunidades para el equipo.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="agent">
+            <img src="https://fbi.cults3d.com/uploaders/14684840/illustration-file/fc596d42-0318-4bef-9415-cd7245a926bb/omen-avatar.jpg" alt="Omen">
+            <div class="agent-details">
+                <h3>Omen (Controlador) - Uso: ~6%</h3>
+                <p>Agente fantasma con teletransportes.</p>
+                <button class="toggle-btn" onclick="toggleDetails('omen-details')">Ver más</button>
+                <div id="omen-details" class="hidden">
+                    <p><strong>Habilidades:</strong> Shrouded Step (teleporte), Paranoia (flash), Dark Cover (smoke), From the Shadows (teleporte global).</p>
+                    <p><strong>Por qué es popular:</strong> Ideal para flanqueos y control de visión.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="agent">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxj-aGtHjC_NbSMNbf7u0OgO8FUteC11rb_g&s" alt="Cypher">
+            <div class="agent-details">
+                <h3>Cypher (Centinela) - Uso: ~5%</h3>
+                <p>Agente marroquí con trampas y cámaras.</p>
+                <button class="toggle-btn" onclick="toggleDetails('cypher-details')">Ver más</button>
+                <div id="cypher-details" class="hidden">
+                    <p><strong>Habilidades:</strong> Trapwire (trampa), Cyber Cage (jaula), Spycam (cámara), Neural Theft (revelar ubicación).</p>
+                    <p><strong>Por qué es popular:</strong> Proporciona información valiosa al equipo.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="agent">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHnAcZjaq3gvsIoXb-R0BhWzNXwRfSJb-6-A&s" alt="Breach">
+            <div class="agent-details">
+                <h3>Breach (Iniciador) - Uso: ~4%</h3>
+                <p>Agente sueco con explosiones sísmicas.</p>
+                <button class="toggle-btn" onclick="toggleDetails('breach-details')">Ver más</button>
+                <div id="breach-details" class="hidden">
+                    <p><strong>Habilidades:</strong> Flashpoint (flash), Fault Line (estremecer), Aftershock (daño), Rolling Thunder (onda expansiva).</p>
+                    <p><strong>Por qué es popular:</strong> Rompe posiciones enemigas y crea openings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mapas">
+        <h2>Mapas Populares</h2>
+        <p>Valorant tiene varios mapas competitivos. Aquí los más jugados con descripciones y fotos.</p>
+
+        <div class="map">
+            <img src="https://static.wikia.nocookie.net/valorant/images/e/e7/Loading_Screen_Ascent.png/revision/latest?cb=20200607180020" alt="Ascent">
+            <div>
+                <h3>Ascent</h3>
+                <p>Mapa abierto con dos niveles conectados por elevadores. Ideal para estrategias verticales. Sitios A y B en áreas abiertas.</p>
+            </div>
+        </div>
+
+        <div class="map">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRosVD1725Fabh3WTdnPhUEMm_NGWTpbdFHkA&s" alt="Bind">
+            <div>
+                <h3>Bind</h3>
+                <p>Mapa con teletransportes. Enfocado en control de teleports. Sitios A y B en extremos opuestos.</p>
+            </div>
+        </div>
+
+        <div class="map">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoKeS5j1SIAyNke11XLKbeYrIEU8e4eCah0g&s" alt="Haven">
+            <div>
+                <h3>Haven</h3>
+                <p>Mapa con tres sitios (A, B, C). Bueno para estrategias defensivas. Más sitios hacen que sea caótico.</p>
+            </div>
+        </div>
+
+        <div class="map">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4FqG7A3VB-88OFTt0UlqwdAUkLievgqIGkg&s" alt="Split">
+            <div>
+                <h3>Split</h3>
+                <p>Mapa vertical con ascensores. Control de elevadores es clave. Sitios A y B separados por un abismo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="estrategias">
+        <h2>Estrategias Básicas</h2>
+        <p>Para principiantes: Enfócate en comunicación, posicionamiento y uso de habilidades. Ejemplos:</p>
+        <ul>
+            <li><strong>Como atacante:</strong> Usa iniciadores (como Breach) para abrir caminos, luego duelistas para limpiar. Planta la Spike en el sitio correcto.</li>
+            <li><strong>Como defensor:</strong> Coloca centinelas (como Sage) para curar y controlar. Espera en posiciones clave y usa utilidades para detectar.</li>
+            <li><strong>Consejo general:</strong> Juega en equipo, compra armas económicas en rondas bajas y practica aim en el rango.</li>
+        </ul>
+    </section>
+
+    <section id="consejos">
+        <h2>Consejos para Jugar Valorant</h2>
+        <p><strong>Para principiantes:</strong> Empieza con agentes simples como Jett o Sage. Practica en modos no competitivos.</p>
+        <p><strong>Mejora tu juego:</strong> Usa el rango para practicar aim. Estudia composiciones de equipo en VLR.gg.</p>
+        <p><strong>Recursos:</strong> Sitio oficial: <a href="https://playvalorant.com" target="_blank">playvalorant.com</a>. Comunidad: Reddit (r/Valorant), Discord oficial.</p>
+        <p><strong>Nota:</strong> Juega responsablemente; el juego puede ser adictivo. Si eres menor, consulta con adultos.</p>
+    </section>
+
+    <footer>
+        <p>Información basada en datos públicos de Riot Games, VLR.gg y Tracker.gg. Creado para fines informativos. © 2025 - ¡Disfruta Valorant!</p>
+    </footer>
+</body>
+</html>
